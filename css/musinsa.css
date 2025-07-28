@@ -4,19 +4,20 @@
 }
 body{
   width: 1920px;
-  height: 1080px;
   margin: 0 auto;
   /* box-sizing: border-box; */
 }
 /* -------------header-------------- */
 header{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: rgb(243, 238, 238);
   width: 100%;
   height: 980px;
 }
 #header_nav_main{
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  top: 0;
+  width: 1920px;
   display: flex;
   height: 80px;
   background-color: rgb(23, 23, 23);
@@ -70,7 +71,7 @@ header{
 }
 /* header 로고 */
 #header_logo{
-  padding-top: 80px;
+  padding-top: 135px;
   background-color: rgb(23, 23, 23);
 }
 #header_logo a{
@@ -98,6 +99,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(23, 23, 23);
   /* border: 1px solid red; */
 }
 #header_search input{
@@ -111,9 +113,11 @@ header{
 /* header 콘텐츠 이동 네비게이션  */
 #header_nav_content{
   width: 1920px;
-  height: 55px;
+  /* height: 55px; */
   position: fixed;
   display: flex;
+  top:80px;
+  z-index: 98;
   background-color: rgb(23, 23, 23);
 }
 .header_nav_content_ul{
@@ -132,11 +136,12 @@ header{
 #header_banner {
   width: 100%;
   height: 600px;
-  margin-top: 55px;
+  margin-top: 10px;
+  display: flex;
 }
 #header_banner img{
   background-size: cover;
-  width: 33%;
+  width: 33.3333%;
   height: 600px;
 }
 /* header shortcut 버튼 */
@@ -145,6 +150,7 @@ header{
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .header_shortcut_list{
   display: inline-block;
@@ -182,6 +188,8 @@ header{
 .main_section_first{
   width: 100%;
   height: 500px;
+  display: flex;
+  justify-content: center;
 }
 .main_section_second{
   width: 100%;
